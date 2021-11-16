@@ -1,4 +1,4 @@
-node('wallmart-node'){
+node('Wallmart-node'){
 def mavenHome = tool name: "Maven3.8.3"
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
